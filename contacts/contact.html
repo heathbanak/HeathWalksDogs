@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Contact </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Dog Walker">
+	<meta name="keywords" content="dog, dogs, dog walker, pet, pets, pet care, rover, 
+									care, sitter, pet sit, pet sitter, house sit, house sitter,
+									sitting, pet sitting, house sitting">
+	<meta name="author" content="Heather Banak">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="../body&header_styles.css">
+	<link rel="icon" href="../images/web_icon.png">
+	
+	<style>
+h1 {
+	text-align: center;
+	font-family: 'Source Sans Pro';
+	letter-spacing: 0.7em;
+	background-color: #FFFCCC;
+	font-size: 1.5em;
+	}
+	
+.article {
+	padding-top: 30px;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom: 80px;
+	}
+
+h2 {
+	text-align: center;
+	padding-top: 35px;
+	font-size: 30px;
+	color: hsla(360, 0%, 92%, 1);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-family: 'Luckiest Guy', serif;
+	}
+
+h3 {
+	text-align: center;
+	}
+
+div.intro {
+	background-color: hsla(0, 0%, 0%, 0.3);
+	color: white;
+	width: 66%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 80px;
+	padding-bottom: 50px;
+	}
+	
+div.intro p {
+	text-align: center;
+	font-size: 15px;
+	}
+
+div.content {
+	background-color: rgba(29, 103, 140, 0.75);
+	color: white;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 25px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: hsla(0, 0%, 0%, 0.25);
+	font-family: 'Noto Sans TC', "sans serif";
+	}
+
+div.content p {
+	text-align: left;
+	}
+
+div.content p a {
+	color: white;
+	}
+
+div.content p a:hover {
+	color: blue;
+	}
+
+div.content p a:active {
+	color: white;
+	}
+
+#form {padding-left: 37px;}
+	
+#last {padding-top: 20px; text-align: center;}
+
+/*line*/
+.line_contain {display: block;}
+
+.line {height: 25px; display: block; margin-right: auto; margin-left: auto; transition: 0.4s ease; padding-top: 80px;}
+.line:hover {transform: scale(1.2);}
+
+.line_text {
+	background-color: hsla(0, 0%, 0%, 0.3);
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	padding-top: 0;
+	}
+
+a.line_text {text-decoration: none; transition: 0.4s ease;}
+a.line_text:hover {transform: scale(1.2);}
+
+#phone_form {display: none;}
+.phone_div {display: none;}
+
+/*form*/
+form {width: 100%;}
+table {
+	border: none;
+	border-collapse: collapse;
+	width: 100%;
+	display: block;
+	margin: 0 auto 0 auto;}
+td {width: 303px; border-bottom: 1px solid #e0e0e0; vertical-align: middle; padding: 10px 0 10px 0;
+					border-top: none;
+					border-right: none;
+					border-left: none;}
+.left {padding-right: 50px;}
+.right {padding-left: 50px;}
+td p {float: right;}
+
+.required {color: #ff8e7a;}
+#required_text {font-style: italic; margin: 30px 0 60px 0; font-size: 13px;}
+tr:hover {background-color: #204f66;}
+button#submit {display: block; margin: 60px auto 50px auto;
+		height: 30px; padding: 0 25px 0 25px; border-radius: 6px;
+		background-color: #f0f0f0;}
+button#submit:hover {background-color: #c4c4c4; cursor: pointer;}
+
+/*width 812*/
+	/*iPhone SE/6/7/8/Plus/X landscape*/
+@media only screen and (max-width: 812px){
+	.article {overflow-x: hidden; padding-bottom: 0; max-width: 100%;}
+	h1 {font-size: 15px; margin-top: 70px;}
+	h2 {display: none;}
+	#form {display: none;}
+	#phone_form {display: block; margin-right: auto; margin-left: auto;}
+	
+	div.intro {width: 89%; padding: 0;}
+	div.content {background-color: transparent; width: 100%; margin: 0; padding: 0;
+					border: none;}
+	#first {padding-top: 25px;}
+	#last {width: 80%; margin: 0 auto 0px auto; padding-bottom: 20px;
+			font-size: 13px;}
+	
+	.phone_div {display: block;}		
+	#email_icon {display: block; height: 100%; width: 100%; float:none; margin: 0 auto 0 auto;}
+	#email_icon_link {width: 30px; height: 100%; padding:0; background-color: rgba(231, 247, 255, 0.7);
+						border-radius: 50px;}
+	#email_icon_contain {width: 100%; height: 30px; padding-left: 48%;
+							padding-bottom: 20px; margin: 65px auto 0 auto;}
+}
+
+/*width 414*/
+	/*iPhone Plus portrait*/
+@media only screen and (max-width: 414px){
+	#email_icon_contain {padding-left: 46%;}
+}
+
+/*width 375*/
+	/*iPhone SE/6/7/8/X portrait*/
+@media only screen and (max-width: 375px){
+	#first {padding: 25px 5px 10px 5px;}
+}
+	</style>
+</head>
+
+
+<body>
+	<header>
+		<!--email large!--> 
+		<p id="large"><a href="mailto: heathwalksdogs@gmail.com">
+			Email now! &nbsp; &nbsp; &nbsp; HeathWalksDogs@gmail.com</a></p>
+		<!--logo and nav!-->
+		<div class="header">
+			<a href="../index.html"><img src="../images/header.png" alt=""></a>
+			<nav>
+				<li>
+					<div class="dropdown">
+						<button class="dropbutton"><a href="../index.html">HOME</a></button>
+							<div class="dropdown-content">
+								<a href="../index.html">ABOUT</a>
+								<a href="../indexFiles/services.html">SERVICES</a>
+							</div>
+					</div>
+				</li>
+				<li><button><a href="../bookings/bookings.html">BOOKINGS</a></button></li>
+				<li><button><a href="../reviews/reviews.html">REVIEWS</a></button></li>
+				<li><button><a href="../gallery/gallery.html">GALLERY</a></button></li>
+				<li><button><a id="current" href="contact.html">CONTACT</a></button></li>
+			</nav>
+		</div>
+		<!--phone size!-->
+		<div class="phone_size">
+			<div id="slogan">
+				A new best friend for your furry friend
+			</div>
+			
+			<figure id="logo">
+				<a href="../index.html">
+					<img src="../images/web_icon.png" alt="">
+				</a>
+			</figure>
+			
+			<button id="menu">
+				<a href="../menu.html">&#8226;menu&#8226;</a>
+			</button>
+		</div>
+	</header>
+	
+	<!--main content!-->
+	<div class="article">
+		<h1>CONTACT</h1>
+		<div class="intro">
+			<h2>CONTACT</h2>
+			<div class="content">
+		<!--
+				<p id="first" style="text-align:center;">Email any time at <a href="mailto:heathwalksdogs@gmail.com">HeathWalksDogs@gmail.com</a>
+					<br/> or...</p>
+
+				<iframe id="form" src="https://docs.google.com/forms/d/e/1FAIpQLSfuxsMPrqZwsQWOX_0IbZpy7FZBZpkP4HI2qQq_qO0EbIIPMg/viewform?embedded=true" width="640" height="375" frameborder="0" marginheight="0" marginwidth="0">Loading…
+					</iframe>
+				<iframe id="phone_form" src="https://docs.google.com/forms/d/e/1FAIpQLSfuxsMPrqZwsQWOX_0IbZpy7FZBZpkP4HI2qQq_qO0EbIIPMg/viewform?embedded=true" width="250" height="375" frameborder="0" marginheight="0" marginwidth="0">Loading…
+					</iframe>
+				<p id="last">Thank you! You can expect a response in 1 to 3 business days</p>
+test!-->
+
+<!--form!-->
+	<div class="required" id="required_text" style="text-align: center;">
+		&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+			* = required field
+		&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;
+					</div>
+    <!-- STEP 1: Put the full URL to formmail.php on your website in the 'action' value. -->
+<form method="post" action="http://www.heathwalksdogs.com/formmail.php" name="SampleForm">
+    <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+
+    <!-- STEP 2: Put your email address in the 'recipients' value.
+                 Note that you also have to allow this email address in the
+                 $TARGET_EMAIL setting within formmail.php!
+    -->
+    <input type="hidden" name="recipients" value="heathwal@heathwalksdogs.com" />
+
+    <!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged.
+            NOTE: DO NOT put your email address and name here.
+            "Your email address" and "Your name" are error messages for your users to see,
+            not placeholders for you to replace.
+    -->
+    <!--anonymous feedback
+    	<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name!" />
+    		!-->
+    	<input type="hidden" name="required" value="mesg:Your message" />
+
+    <!-- STEP 4: Put your subject line in the 'subject' value. -->
+    <input type="hidden" name="subject" value="Contact Form Submission" />
+
+    <!-- ALL DONE! Visit our site for HOW TO guides and more complex features. -->
+
+    <!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+    <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+
+    <!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+    <input type="hidden" name="mail_options" value="Exclude=email;realname" />
+    
+    <!-- redirect on success -->
+    <input type="hidden" name="good_url"
+       value="http://heathwalksdogs.com/form_submit/form_success.html" />
+    
+    <!-- redirect on error -->
+    <input type="hidden" name="bad_url"
+       value="http://heathwalksdogs.com/form_submit/form_error.html" />
+		
+    <table border="1" cellspacing="5%">
+    <tr>
+        <td class="left" id="firstLeft">
+        <p>Name:</p>
+        </td>
+        <td class="right" id="firstRight"><input type="text" name="FullName" />
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+        <p>Email address:</p>
+        </td>
+        <td class="right"><input type="text" name="EmailAddr" />
+        </td>
+    </tr>
+    <tr>
+        <td class="left"><p class="required">*May we contact you?</p>
+        </td>
+        <td class="right">
+            Yes <input type="radio" name="contact" value="Y" checked="checked" />
+            No <input type="radio" name="contact" value="N" />
+         </td>
+    </tr>
+    <!--<tr>
+        <td><p>What are your favourite colours?</p>
+        </td>
+        <td>
+            Red     <input type="checkbox" name="colors[]" value="red" />
+            Blue    <input type="checkbox" name="colors[]" value="blue" />
+            Yellow  <input type="checkbox" name="colors[]" value="yellow" />
+         </td>
+    </tr>!
+    <tr>
+        <td valign="top"><p>What vehicles do you have a license to operate?</p>
+        </td>
+        <td valign="top">
+            <p>
+            <select name="vehicles[]" multiple="multiple" size="5">
+                <option value="Car">Car</option>
+                <option value="Bus">Bus</option>
+                <option value="Truck">Truck</option>
+                <option value="Plane">Aeroplane</option>
+                <option value="Boat">Boat</option>
+            </select>&nbsp;(Select all that apply; use CTRL-click to select)
+            </p>
+         </td>
+    </tr>!-->
+    <tr>
+        <td valign="top" class="left" id="lastLeft">
+        <p class="required">*Please enter your message:</p>
+        </td>
+        <td class="right" id="lastRight"><textarea name="mesg" rows="10" cols="50"></textarea>
+        </td>
+    </tr>
+        </table>
+    <button id="submit" type="submit">SUBMIT</button>
+</form>
+<!--end form!-->
+
+			</div>
+				</div>
+
+		<figure class="line_contain">
+			<a href="#top"><img class="line" src="../images/bone.png" alt=""></a>
+		</figure>
+		<div class="line_text">
+			<a class="line_text" href="#top">BACK TO TOP</a>
+		</div>
+		
+		<div class="phone_div" id="email_icon_contain">
+			<a id="email_icon_link" href="mailto:heathwalksdogs@gmail.com">
+				<img id="email_icon" src="../images/email.png" alt="email">
+					</a>
+						</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
