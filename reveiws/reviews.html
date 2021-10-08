@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Reviews </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Dog Walker">
+	<meta name="keywords" content="dog, dogs, dog walker, pet, pets, pet care, rover, 
+									care, sitter, pet sit, pet sitter, house sit, house sitter,
+									sitting, pet sitting, house sitting">
+	<meta name="author" content="Heather Banak">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="../body&header_styles.css">
+	<link rel="icon" href="../images/web_icon.png">
+	
+	<style>
+article {
+	padding-top: 30px;
+	padding-bottom: 100px;
+	background-image: url("../images/background/reviews.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	}
+
+h1 {
+	text-align: center;
+	font-family: 'Source Sans Pro';
+	letter-spacing: 0.7em;
+	background-color: #FFFCCC;
+	}
+	
+div.rover {
+	background-color: hsla(0, 0%, 0%, 0.3);
+	color: white;
+	width: 86%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 80px;
+	padding-bottom: 50px;
+	}
+
+h2 {
+	text-align: center;
+	padding-top: 15px;
+	font-size: 30px;
+	color: hsla(360, 0%, 92%, 1);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-family: 'Luckiest Guy', serif;
+	}
+
+div.review {
+	background-color: rgba(29, 103, 140, 0.75);
+	color: white;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 25px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: hsla(0, 0%, 0%, 0.25);
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	}
+
+div.review p {
+	font-size: 20px;
+	}
+
+.date {
+	color: hsla(360, 0%, 82%, 1);
+	}
+	
+#r2, #r3, #r4, #r5 {
+	margin-bottom: 40px;
+	}
+	
+#star {
+	width: 100px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+p#total {
+	text-align: center;
+	color: hsla(360, 0%, 82%, 1)
+	}
+	
+button#link {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 75px;
+	height: 80px;
+	width: 200px;
+	transition: 0.4s;
+	border: none;
+	background-color: hsla(0, 0%, 0%, 0.7);
+	}
+
+button#link:hover {
+	transform: scale(1.2);
+	text-decoration: underline;
+	}
+
+button#link > a {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	}
+
+button#link > a:active {
+	color: rgb(87, 0, 173);
+	}
+
+/*line*/
+.line_contain {display: block;}
+
+.line {height: 25px; display: block; margin-right: auto; margin-left: auto; transition: 0.4s ease; padding-top: 80px;}
+.line:hover {transform: scale(1.2);}
+
+.line_text {
+	background-color: hsla(0, 0%, 0%, 0.3);
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	padding-top: 0;
+	}
+
+a.line_text {text-decoration: none; transition: 0.4s ease;}
+a.line_text:hover {transform: scale(1.2);}
+	
+/*GRID*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 20px;
+}
+
+.phone_div {display: none;}
+
+
+/*width 812*/
+	/*iPhone X landscape*/
+@media only screen and (max-width: 812px){
+	article {background-image: url("../images/reviews_phone.jpg"); background-size: cover;
+				overflow-x: hidden; max-width: 100%;}
+	h1 {font-size: 15px; margin-top: 60px;}
+	h2 {display: none;}
+	div.review {display: none;}
+	.phone_div {display: block;}
+	
+	.phone_div p {width: 100%; text-align: center; font-family: "Noto Sans TC", 'sans serif';
+					padding-top: 15px;}
+	.phone_div hr {width: 85%; margin: 15px auto 15px auto;}
+	#star {padding-top: 10px;}
+	#total {font-size: 13px;}
+	
+	.phone_review {font-family: "Roboto", 'sans serif'; font-weight: 100;}
+	.phone_date {color: hsl(360, 0%, 82%);}
+	
+	.phone_container {display: block; width: 100%; font-size: 14px;}
+		.name_date {float: left; width: 100px; margin-left: 10px; padding-left: 198px; }
+			#nd_lisa {padding-top: 0px;}
+			#nd_sharon {padding-top: 0px;}
+			#nd_sarah {padding-top: 8px;}
+		.phone_r_preview {float: right; width: 240px; clear: none;
+							border-left: 1px solid white; padding-left: 10px; padding-right: 115px;
+							margin-bottom: 10px;}
+
+	/*extend content on click*/
+	article {padding-bottom: 0;}
+	input, label {clear: both;}
+	input, ul.submenu {display: none;}
+	label img {width: 15px; height: 15px; margin: auto;}
+	label {/*font-size: 10px;*/
+			display: block;
+			cursor: pointer;
+			margin: 30px auto auto auto;
+			width: 85%;
+			text-align: center;
+			/*background-color: hsla(199, 29%, 57%, 0.85);
+			color: #ededed;
+			padding: 10px 0px 10px 0px;
+			width: 90px;
+			border-radius: 8px;*/}
+	.phone_more {background-color: rgba(145, 145, 145, 0.5); border-radius: 10px 10px 0 0;
+					padding-top: 5px; padding-right: 12px;}
+	input:checked~ul.submenu {display: block;}
+	.submenu {list-style-type: none; text-align: center; margin: 0 auto 0 auto; background-color: rgba(145, 145, 145, 0.5);
+				font-family: 'Noto Sans TC', "sans serif"; font-size: 13px; border-radius: 0px 0px 10px 10px;
+					padding: 20px 10px 0 10px; width: 82%;}
+	.phone_less {border-radius: 0px 0px 10px 10px; margin-top: 30px;
+					padding-bottom: 5px;}
+	
+	#review_1, #review_2 {margin-top: 45px;}
+	
+	button#link {width: 130px; height: 54px;}
+	button#link a {font-size: 14px;}
+	
+	#email_icon {display: block; height: 100%; width: 100%; float:none; margin: 0 auto 0 auto;}
+	#email_icon_link {width: 30px; height: 100%; padding:0; background-color: rgba(231, 247, 255, 0.7);
+						border-radius: 50px;}
+	#email_icon_contain {width: 100%; height: 30px; padding-left: 48.5%;
+							padding-bottom: 20px; margin: 65px auto 0 auto;}
+}
+
+/*width 736*/
+	/*iPhone Plus landscape*/
+@media only screen and (max-width: 736px){
+	.name_date {padding-left: 170px; }
+	#nd_sharon {padding-top: 10px;}
+	#nd_sarah {padding-top: 15px;}
+	.phone_r_preview {width: 200px;}
+}
+
+/*width 667*/
+	/*iPhone 6/7/8 landscape*/
+@media only screen and (max-width: 667px){
+	.name_date {padding-left: 150px;}
+	.phone_r_preview {padding-right: 85px; width: 200px;}
+}
+
+/*width 568*/
+	/*iPhone SE landscape*/
+@media only screen and (max-width: 568px){
+	.name_date {padding-left: 120px;}
+		#nd_lisa {padding-top: 5px;}
+		#nd_sharon {padding-top: 15px;}
+	.phone_r_preview {width: 150px; padding-right: 94px;}
+	#email_icon_contain {padding-left: 48%;}
+}
+
+/*width 414*/
+	/*iPhone Plus portrait*/
+@media only screen and (max-width: 414px){
+	article {background-image: url("../images/reviews_phone.jpg");}
+	.name_date {padding-left: 40px; }
+	.phone_r_preview {width: 160px; padding-right: 30px;}
+	#email_icon_contain {padding-left: 46%;}
+}
+
+/*width 375*/
+	/*iPhone 6/7/8/X portrait*/
+@media only screen and (max-width: 375px){
+	.name_date {padding-left: 35px; width: 90px;}
+	.phone_r_preview {width: 130px;}
+	#nd_lisa {padding-top: 5px;}
+	#nd_sharon {padding-top: 20px;}
+	#nd_sarah {padding-top: 25px;}
+}
+
+/*width 320*/
+	/*iPhone SE portrait*/
+@media only screen and (max-width: 320px){
+	.name_date {padding-left: 20px;}
+	.phone_r_preview {width: 123px; padding-right: 15px;}
+}
+	</style>
+</head>
+
+
+<body>
+	<header>
+		<!--email large!--> 
+		<p id="large"><a href="mailto: heathwalksdogs@gmail.com">
+			Email now! &nbsp; &nbsp; &nbsp; HeathWalksDogs@gmail.com</a></p>
+		<!--logo and nav!-->
+		<div class="header">
+			<a href="../index.html"><img src="../images/header.png" alt=""></a>
+			<nav>
+				<li>
+					<div class="dropdown">
+						<button class="dropbutton"><a href="../index.html">HOME</a></button>
+							<div class="dropdown-content">
+								<a href="../index.html">ABOUT</a>
+								<a href="../indexFiles/services.html">SERVICES</a>
+							</div>
+					</div>
+				</li>
+				<li><button><a href="../bookings/bookings.html">BOOKINGS</a></button></li>
+				<li><button><a id="current" href="reviews.html">REVIEWS</a></button></li>
+				<li><button><a href="../gallery/gallery.html">GALLERY</a></button></li>
+				<li><button><a href="../contact/contact.html">CONTACT</a></button></li>
+			</nav>
+		</div>
+		
+		<!--phone size!-->
+		<div class="phone_size">
+			<div id="slogan">
+				A new best friend for your furry friend
+			</div>
+			
+			<figure id="logo">
+				<a href="../index.html">
+					<img src="../images/web_icon.png">
+				</a>
+			</figure>
+			
+			<button id="menu">
+				<a href="../indexFiles/menu.html">&#8226;menu&#8226;</a>
+			</button>
+		</div>
+	</header>
+	
+	<article>
+		<h1>REVIEWS</h1>
+		<div class="rover">
+			<h2>From Rover.com</h2>
+<!--for phone!-->
+<div class="phone_div">
+	<p>From Rover.com
+		</p>
+	<hr/>
+		</div>
+<!--end phone!-->
+			<img src="../images/stars.png" id="star" alt="">
+			<p id="total">9 reviews total &nbsp; | &nbsp; all verified stays</p>
+			
+			<div class="grid-container">			
+				<div class="review" id="r5">
+					<div class="name">Lisa P.</div>
+					<div class="date">Mar. 16, 2020</div>
+						<p class="content">Heather is great!
+							She is timely, professional and clearly cares and understands dog and cat behavior.
+							While yes, she may be new to Rover, I highly recommend her.
+							She is now regularly walking my youngest pup and takes him for a good long walk.
+							Not just a quick trip around the block.
+							House sitting, she sends regular updates with pictures, kept everybody happy, fed and healthy.
+							She left a clean house and even turned the the porch light on for us :)
+							5 Stars!!</p>
+				</div>
+							
+				<div class="review" id="r4">
+					<div class="name">Sharon M.</div>
+					<div class="date">Feb. 20, 2020</div>
+						<p class="content">Heather was wonderful! 
+							She took great care of our two energetic dogs, 
+							she played with them and gave us a full update with pictures. 
+							Would definitely use her again and recommend her to others.</p>
+				</div>
+				
+				<div class="review" id="r3">
+					<div class="name">Sarah G.</div>
+					<div class="date">Feb. 12, 2020</div>
+						<p class="content">We have a 3 month old puppy and a 4 year old dog. 
+							Heather is great with both! 
+							She is on time and takes great care of them both. 
+							Recommend without reservation!</p>
+				</div>
+				
+				<div class="review" id="r2">
+					<div class="name">Sarah G.</div>
+					<div class="date">Feb. 12, 2020</div>
+						<p class="content">Heather hasn’t been on Rover long, 
+							but her previous experience taking care of and walking dogs is evident. 
+							Responsive, responsible and great with the dogs! 5 Stars.</p>
+				</div>
+				
+				<div class="review" id="r1">
+					<div class="name">Sarah G.</div>
+					<div class="date">Feb. 12, 2020</div>
+						<p class="content">Heather responds quickly, is very thorough, 
+							always on time and great with the pups. 
+							You can tell she has a true joy that comes from taking care of animals, 
+							and they love the attention she gives. Highly recommend!</p>
+				</div>	
+			</div>
+
+<!--for phone!-->
+<div class="phone_div">
+
+	<div class="phone_review" id="review_3">
+		<div class="phone_container">
+			<div class="name_date">
+				<div class="phone_name" id="nd_lisa">
+					Lisa P.
+						</div>
+				<div class="phone_date">
+					Mar. 16, 2020
+						</div>
+							</div>
+			<div class="phone_r_preview">Heather is great!
+				She is timely, professional and...
+					</div>
+						</div>
+		
+		<input id="r3_p" type="checkbox" name="menu"/>
+		<label class="phone_more" for="r3_p">
+			<img src="../images/arrow/down.png" alt="">
+				</label>
+		<ul class="submenu">
+			<li>...clearly cares and understands dog and cat behavior.
+				While yes, she may be new to Rover, I highly recommend her.
+				She is now regularly walking my youngest pup and takes him for a good long walk.
+				Not just a quick trip around the block.
+				House sitting, she sends regular updates with pictures, kept everybody happy, fed and healthy.
+				She left a clean house and even turned the the porch light on for us :)
+				5 Stars!!
+					</li>
+			<li><label class="phone_less" for="r3_p"><img src="../images/arrow/up.png">
+				</label>
+					</li>
+						</ul>
+							</div>
+	<div class="phone_review" id="review_2">
+		<div class="phone_container">
+			<div class="name_date" id="nd_sharon">
+				<div class="phone_name">
+					Sharon M.
+						</div>
+				<div class="phone_date">
+					Feb. 20, 2020
+						</div>
+							</div>
+			<div class="phone_r_preview">Heather was wonderful! 
+				She took great care of our two energetic dogs...
+					</div>
+						</div>
+		
+		<input id="r2_p" type="checkbox" name="menu"/>
+		<label class="phone_more" for="r2_p">
+			<img src="../images/arrow/down.png" alt="">
+				</label>
+		<ul class="submenu">
+			<li>... she played with them and gave us a full update with pictures. 
+				Would definitely use her again and recommend her to others.
+					</li>
+			<li><label class="phone_less" for="r2_p"><img src="../images/arrow/up.png">
+				</label>
+					</li>
+						</ul>
+							</div>
+	<div class="phone_review" id="review_1">
+		<div class="phone_container">
+			<div class="name_date" id="nd_sarah">
+				<div class="phone_name">
+					Sarah G.
+						</div>
+				<div class="phone_date">
+					Feb. 12, 2020
+						</div>
+							</div>
+			<div class="phone_r_preview">We have a 3 month old puppy and a 4 year old dog. 
+				Heather is great with both!...
+					</div>
+						</div>
+		
+		<input id="r1_p" type="checkbox" name="menu"/>
+		<label class="phone_more" for="r1_p">
+			<img src="../images/arrow/down.png" alt="">
+				</label>
+		<ul class="submenu">
+			<li>...She is on time and takes great care of them both. 
+				Recommend without reservation!
+					</li>
+			<hr/>
+			
+			<li>Heather hasn’t been on Rover long, 
+				but her previous experience taking care of and walking dogs is evident. 
+				Responsive, responsible and great with the dogs! 5 Stars.
+					</li>
+			<hr/>
+			
+			<li>Heather responds quickly, is very thorough, 
+							always on time and great with the pups. 
+							You can tell she has a true joy that comes from taking care of animals, 
+							and they love the attention she gives. Highly recommend!
+					</li>
+			<li><label class="phone_less" for="r1_p"><img src="../images/arrow/up.png">
+				</label>
+					</li>
+						</ul>
+							</div>
+								</div>
+<!--end phone!-->
+		</div>
+		
+		<button id="link">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSfeGJZOw1KeiPFXFNZMQ8UuvP71FRp4NyxMPcmaq89WMUDNqQ/viewform?usp=sf_link">
+				Leave a review</a>
+		</button>
+		
+		<figure class="line_contain">
+			<a href="#top"><img class="line" src="../images/bone.png" alt=""></a>
+		</figure>
+		<div class="line_text">
+			<a class="line_text" href="#top">BACK TO TOP</a>
+		</div>
+		
+		<div class="phone_div" id="email_icon_contain">
+			<a id="email_icon_link" href="mailto:heathwalksdogs@gmail.com">
+				<img id="email_icon" src="../images/email.png" alt="email">
+					</a>
+						</div>
+		
+	</article>
+</body>
+</html>
