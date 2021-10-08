@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Bookings </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Dog Walker">
+	<meta name="keywords" content="dog, dogs, dog walker, pet, pets, pet care, rover, 
+									care, sitter, pet sit, pet sitter, house sit, house sitter,
+									sitting, pet sitting, house sitting">
+	<meta name="author" content="Heather Banak">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../body&header_styles.css">
+	<link rel="stylesheet" href="bookings.css">
+	<link rel="icon" href="../images/web_icon.png">
+	
+
+</head>
+
+
+<body>
+	<header>
+		<!--email large!--> 
+		<p id="large"><a href="mailto: heathwalksdogs@gmail.com">
+			Email now! &nbsp; &nbsp; &nbsp; HeathWalksDogs@gmail.com</a></p>
+		<!--logo and nav!-->
+		<div class="header">
+			<a href="../index.html"><img src="../images/header.png" alt=""></a>
+			<nav>
+				<li>
+					<div class="dropdown">
+						<button class="dropbutton"><a href="../index.html">HOME</a></button>
+							<div class="dropdown-content">
+								<a href="../index.html">ABOUT</a>
+								<a href="../indexFiles/services.html">SERVICES</a>
+							</div>
+					</div>
+				</li>
+				<li><button><a id="current" href="bookings.html">BOOKINGS</a></button></li>
+				<li><button><a href="../reviews/reviews.html">REVIEWS</a></button></li>
+				<li><button><a href="../gallery/gallery.html">GALLERY</a></button></li>
+				<li><button><a href="../contact/contact.html">CONTACT</a></button></li>
+			</nav>
+		</div>
+		
+		<!--phone size!-->
+		<div class="phone_size">
+			<div id="slogan">
+				A new best friend for your furry friend
+			</div>
+			
+			<figure id="logo">
+				<a href="../index.html">
+					<img src="../images/web_icon.png">
+				</a>
+			</figure>
+			
+			<button id="menu">
+				<a href="../indexFiles/menu.html">&#8226;menu&#8226;</a>
+			</button>
+		</div>
+	</header>
+	
+	
+<article>
+	<h1>BOOKINGS</h1> 
+	
+	<div class="intro">**Bookings must be made at least two weeks in advance
+		</div>
+	
+	<div id="container">
+		
+		<!--
+			<p class="color" id="red">Times on calendar are NOT AVAILABLE</p><!
+				-->
+		
+		<div class="calendar" id="calendar1">
+			<p class="color" id="green">WALKING AND CHECK-INS</p>
+			<iframe src="https://calendar.google.com/calendar/b/4/embed?height=450&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=aGVhdGh3YWxrc2RvZ3NAZ21haWwuY29t&amp;color=%23039BE5&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="550" height="450" frameborder="0" scrolling="no">
+				</iframe>
+		</div>
+		<div class="calendar" id="calendar2">
+		<p class="color" id="green">HOUSE SITTING</p>
+			<iframe src="https://calendar.google.com/calendar/b/4/embed?height=450&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=ZXY2MzR2bDgyMDJhdmFtbWR2bzNmZnQ2YWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23EF6C00&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0" style="border-width:0" width="550" height="450" frameborder="0" scrolling="no">
+				</iframe>
+		</div>
+		
+<button onclick="toggleform()" id="formButton">NEW BOOKING REQUEST</button>
+	<div class="formContainer" id="form">
+					<form method="post" action="http://www.heathwalksdogs.com/formmail.php" name="SampleForm">
+	
+				    	<input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" /><!-- STEP 1: Put the full URL to formmail.php on your website in the 'action' value. -->	
+				    	<input type="hidden" name="recipients" value="heathwal@heathwalksdogs.com" /><!-- STEP 2: Put your email address in the 'recipients' value. Note that you also have to allow this email address in the $TARGET_EMAIL setting within formmail.php!-->
+				    	<input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name,petNames:About your pets,serviceNeeded[]:Service needed,dateStart:Start date,bookingType:Booking type," /><!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged. NOTE: DO NOT put your email address and name here. "Your email address" and "Your name" are error messages for your users to see, not placeholders for you to replace.-->
+				    	<input type="hidden" name="subject" value="Sample FormMail Testing" /><!-- STEP 4: Put your subject line in the 'subject' value.--> 
+				    	<input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" /><!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+				    	<input type="hidden" name="mail_options" value="Exclude=email;realname" /><!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+
+					<div class="required" id="required">
+						&#8226;&nbsp;required field
+							</div>	
+		<!--INFO!-->
+					<div class="section" id="sectionInfo">
+						<h2 class="sectionHeading">Info</h2>
+						<div class="innerWrap">
+							<div class="float_left">
+								<label>&#8226;&nbsp;Name:
+									<input type="text" name="FullName" />
+									</label>
+								<label>&#8226;&nbsp;Email:
+									<input type="email" name="EmailAddr" />
+									</label>
+										</div>
+							<div class="float_right">
+								<label>Phone number:
+									<input type="text" name="PhoneNum" />
+									</label>
+								<label>Which do you prefer?
+									<br/>
+									<br/>
+									<div class="radio">
+									  <span id="radioEmail">email	<input type="radio" name="prefer" value="email" /></span>
+    								  <span id="radioText">text	<input type="radio" name="prefer" value="text" /></span>
+    								  <span id="radioPhone">phone call <input type="radio" name="prefer" value="phone" /></span>
+    								  <span id="radioNone">no preference	<input type="radio" name="prefer" value="none" /></span>
+    								  	</div>
+    										</label>
+    											</div>
+    						<label class="noFloat">&#8226;&nbsp;Pet names and descriptions:
+								<textarea name="petNames" rows="10" cols="50"></textarea>
+								</label>
+									</div>
+										</div>
+		<!--SERVICE!-->	
+					<div class="section" id="sectionService">
+						<h2 class="sectionHeading">Service details</h2>
+						<div class="innerWrap">
+							<label>&#8226;&nbsp;Service requested:
+								<br/>
+								<br/>
+								<div class="radio">
+								  <span id="radioWalks">Dog walking / drop-ins	<input type="checkbox" name="serviceNeeded[]" value="walks" /></span>
+								  <span id="radioHouse">House sitting	<input type="checkbox" name="serviceNeeded[]" value="houseSit"></span>
+								  	</div>
+									</label>
+							<label>&#8226;&nbsp;Start date:
+								<input type="date" name="dateStart" />
+								</label>
+							<label>End date:
+								<input type="date" name="dateEnd" />
+								</label>
+							<label>Meet-up date (typically within 1-2 weeks before start date):
+								<input type="date" name="dateMeet" />
+								</label>
+							<label>&#8226;&nbsp;Booking type:
+								<br/>
+								<br/>
+								<div class="radio">
+								  <span id="serveOnce">One-time	<input type="radio" name="bookingType" value="once" /></span>
+    							  <span id="serveRecurr">Recurring	<input type="radio" name="bookingType" value="recurring"></span>
+   				 				  <span id="serveUnknown">Unknown		<input type="radio" name="bookingType" value="unknown" /></span>
+    							  	</div>
+    									</label>
+    										</div>
+    	</div>
+		<!--MESSAGE!-->   
+					<div class="section" id="sectionMessage"> 				
+					    <h2 class="sectionHeading">Add a message</h2>
+					    <div class="innerWrap">
+			    			<label>Enter message below.
+    							<textarea name="mesg" rows="10" cols="50"></textarea>
+  				  				</label>
+  				  					</div>
+    									</div>
+		<!--BUTTON!-->
+					<div class="buttonSection">
+			<button type="submit" id="buttonSubmit">Submit</button>
+		    <span style="font-size:60%;">Powered by Tectite <a href="http://www.tectite.com/" target="_blank">php form</a> (FormMail).
+		    	</span>
+		    		</div>
+						</form>
+							</div>
+		
+	</div>
+<!--for phone!-->
+	<div id="container_phone">
+		<div class="intro" id="calendar_contain_phone">
+			<p class="bookings_header_phone">Availability
+				</p>
+				
+			<hr class="line_long"/>
+			
+			<p>Please click either button below to be redirected to my google calendars.
+				When prompted, click 'Add' to view my calendar.
+				Thank you.
+				</p>
+			
+			<hr class="line_short"/>
+				
+			<button class="button_calendar" id="bc_walk">
+				<a class="bc_link" href="https://calendar.google.com/calendar/b/4?cid=aGVhdGh3YWxrc2RvZ3NAZ21haWwuY29t">
+					Walking
+						</a>
+							</button>
+			
+			<button class="button_calendar" id="bc_house">
+				<a class="bc_link" href="https://calendar.google.com/calendar/b/4?cid=ZXY2MzR2bDgyMDJhdmFtbWR2bzNmZnQ2YWdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">
+					House Sitting
+						</a>
+							</button>
+								</div>
+		
+		<div class="schedule_phone">
+			<button id="schedule_button">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSfePC2uAvHQI5rYdnZf5Ksx4-fSCSocGGhgAoWrojn2gUfkNA/viewform?usp=sf_link">
+					SCHEDULE A SERVICE
+						</a>
+							</button>
+								</div>
+									</div>
+<!--end phone!-->	
+	<figure id="line_contain">
+			<a href="#top"><img id="line" src="../images/bone.png" alt=""></a>
+		</figure>
+		<div class="line_text" id="linetext"><a class="line_text" href="#top">BACK TO TOP</a></div>
+	
+	<div class="phone_div" id="email_icon_contain">
+			<a id="email_icon_link" href="mailto:heathwalksdogs@gmail.com">
+				<img id="email_icon" src="../images/email.png" alt="email">
+					</a>
+						</div>
+	<div class="line_text" id="LT2"><a class="line_text" href="#top">BACK TO TOP</a></div>
+	
+</article>
+	<script>
+ function toggleform() {
+    // get the form
+    var myform = document.getElementById('form');
+
+    // get the current value of the form's display property
+    var displaySetting = myform.style.display;
+
+    // also get the form button, so we can change what it says
+    var formButton = document.getElementById('formButton');
+
+    // now toggle the form and the button text, depending on current state
+    if (displaySetting == 'block') {
+      // form is visible. hide it
+      myform.style.display = 'none';
+      // change button text
+      formButton.innerHTML = 'NEW BOOKING REQUEST';
+    }
+    else {
+      // form is hidden. show it
+      myform.style.display = 'block';
+      // change button text
+      formButton.innerHTML = 'HIDE';
+    }
+  }
+
+</script>
+</body>
+</html>
