@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Gallery </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Dog Walker">
+	<meta name="keywords" content="dog, dogs, dog walker, pet, pets, pet care, rover, 
+									care, sitter, pet sit, pet sitter, house sit, house sitter,
+									sitting, pet sitting, house sitting">
+	<meta name="author" content="Heather Banak">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="../body&header_styles.css">	
+	<link rel="icon" href="../images/web_icon.png">
+	
+	<style>
+h1 {
+	text-align: center;
+	font-family: 'Source Sans Pro';
+	letter-spacing: 0.7em;
+	background-color: #FFFCCC;
+	font-size: 24px;
+	}
+	
+article {
+	padding-top: 30px;
+	background-image: url("../images/background/gallery.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom: 80px;
+	}
+
+div#slideshow {
+	padding-top: 40px;
+	padding-bottom: 90px;
+	}
+
+/* slideshow */
+	
+.mySlides {
+	display: none;
+	}
+.slideshow-container img {
+	vertical-align: middle;
+	width: 100%;
+	}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 60px 16px 35px 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: transparent;
+  height: 50px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+hr {
+	width: 40px;
+	margin-right: 1000px;
+	}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  padding-left: 845px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #FFFCCC;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #e7dc2c;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/*line*/
+.line_contain {display: block;}
+
+.line {height: 25px; display: block; margin-right: auto; margin-left: auto; transition: 0.4s ease; padding-top: 80px;}
+.line:hover {transform: scale(1.2);}
+
+.line_text {
+	background-color: hsla(0, 0%, 0%, 0.3);
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	padding-top: 0;
+	}
+
+a.line_text {text-decoration: none; transition: 0.4s ease;}
+a.line_text:hover {transform: scale(1.2);}
+.phone_div {display: none;}
+
+/*responsive design checklist --
+	d	iPhone SE: portrait (w320);landscape (w568)				
+	d	iPhone 8: portrait (w375);landscape (w667)				
+	d	iPhone 8 plus: portrait (w414);landscape (w736)
+	
+		iPhone X:
+		d	portrait (w375)
+			landscape (w812)
+	
+		iPad mini: 
+			portrait
+				fullscreen (w768);
+				splitscreen
+					small (w320)
+					large (w438)
+			landscape
+				fullscreen (w1024)
+				splitscreen
+					small (w320)
+					large (w694)
+					even (w507)
+		iPad:
+			portrait
+				fullscreen (w768)
+				splitscreen
+					small (w320)
+					large (w438)
+			landscape
+				fullscreen (w1024)
+				splitscreen
+					small (w320),
+					arge (w694)
+					even (w507)
+		iPad Pro small:
+			portrait
+				fullscreen (w834)
+				splitscreen
+					small (w320)
+					large (w504)
+			landscape
+				fullscreen (w1112)
+				splitscreen
+					small (w320)
+					large (w782)
+					even (w551)
+		iPad Pro large:
+			portrait
+				fullscreen (w1024)
+				splitscreen
+					small (w375)
+					large (w639)
+			landscape
+				fullscreen (w1366)
+				splitscreen
+					small (w375)
+					large (w981)
+					even (w678)
+									--*/
+
+/*responsive*/
+
+/*width 812*/
+	/*iPhone X landscape*/
+@media only screen and (max-width: 812px){
+	article {background-image: url("../images/background/gallery.jpg");
+				padding-bottom: 0px; overflow: hidden;}
+	h1 {font-size: 15px; margin-top: 60px;}
+
+	.slideshow-container {width: 500px;}
+	.numbertext {position: static; padding: 0;}
+	.text {position: static; font-size: 17px; padding: 0; text-align: center;
+			margin-top: 15px; background-color: rgba(0, 0, 0, 0.2);
+			width: 200px; margin-right: auto; margin-left: auto;}
+	hr {margin-right: auto; margin-left: auto;}
+	.next, .prev {top: 25%;}
+	#dot_container {margin-right: 150px; margin-left: 150px; margin-top: 30px;}
+	
+	.line {padding-top: 50px;}
+	.phone_div {display: block;}
+	#email_icon {display: block; height: 100%; width: 100%; float:none; margin: 0 auto 0 auto;}
+	#email_icon_link {width: 30px; height: 100%; padding:0; background-color: rgba(231, 247, 255, 0.7);
+						border-radius: 50px;}
+	#email_icon_contain {width: 100%; height: 30px; padding-left: 48.5%;
+							padding-bottom: 20px; margin: 65px auto 0 auto;}
+}
+
+/*width 736*/
+	/*iPhone Plus landscape*/
+@media only screen and (max-width: 736px){
+	#dot_container {margin-right: 100px; margin-left: 100px; margin-top: 30px;}
+}
+
+/*width 568*/
+	/*iPhone SE/6/7/8 landscape*/
+@media only screen and (max-width: 568px){
+	#dot_container {margin-right: 70px; margin-left: 70px;}
+}
+
+
+/*width 414*/
+	/*iPhone SE/6/7/8/Plus/X portrait*/
+@media only screen and (max-width: 414px){
+	article {background-image: url("../images/background/gallery_phone.jpg");}
+	.slideshow-container {width: 100%;}	
+	#dot_container {margin-right: 10px; margin-left: 10px;}
+	#email_icon_contain {padding-left: 46%;}
+	.next, .prev {padding: 90px 16px 70px 16px; top: 13%; background-color: transparent;}
+}
+
+/*width 375*/
+	/*iPhone X portrait*/
+@media only screen and (max-width: 375px){
+	.next, .prev {padding: 80px 16px 60px 16px; top: 14%;}
+}
+
+/*width 320*/
+	/*iPhone X portrait*/
+@media only screen and (max-width: 320px){
+	.next, .prev {padding: 70px 16px 43px 16px; top: 15%;}
+}
+	</style>
+</head>
+
+
+<body>
+	<header>
+		<!--email large!--> 
+		<p id="large"><a href="mailto: heathwalksdogs@gmail.com">
+			Email now! &nbsp; &nbsp; &nbsp; HeathWalksDogs@gmail.com</a></p>
+		<!--logo and nav!-->
+		<div class="header">
+			<a href="../index.html"><img src="../images/header.png" alt=""></a>
+			<nav>
+				<li>
+					<div class="dropdown">
+						<button class="dropbutton"><a href="../index.html">HOME</a></button>
+							<div class="dropdown-content">
+								<a href="../index.html">ABOUT</a>
+								<a href="../indexFiles/services.html">SERVICES</a>
+							</div>
+					</div>
+				</li>
+				<li><button><a href="../bookings/bookings.html">BOOKINGS</a></button></li>
+				<li><button><a href="../reviews/reviews.html">REVIEWS</a></button></li>
+				<li><button><a id="current" href="gallery.html">GALLERY</a></button></li>
+				<li><button><a href="../contact/contact.html">CONTACT</a></button></li>
+			</nav>
+		</div>
+		
+		<!--phone size!-->
+		<div class="phone_size">
+			<div id="slogan">
+				A new best friend for your furry friend
+			</div>
+			
+			<figure id="logo">
+				<a href="../index.html">
+					<img src="../images/web_icon.png">
+				</a>
+			</figure>
+			
+			<button id="menu">
+				<a href="../menu.html">&#8226;menu&#8226;</a>
+			</button>
+		</div>
+	</header>
+
+<article>	
+	<h1>GALLERY</h1>
+<!--slideshow!-->
+<div id="slideshow">
+	<div class="slideshow-container">
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 33</div>
+		  <img src="images/img5-1.png" alt=""> 
+		  <div class="text">Jackson &amp; General<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 33</div>
+		  <img src="images/img7-1.png" alt="">
+		  <div class="text">Otis &amp; Ollie<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 33</div>
+		  <img src="images/img8-1.png" alt="">
+		  <div class="text">Jackson &amp; General<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 33</div>
+		  <img src="images/img11-1.png" alt="">
+		  <div class="text">Sadie<hr/>Dog Walking - feeding</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">5 / 33</div>
+		  <img src="images/img12-1.png" alt="">
+		  <div class="text">Sadie &amp; Paisley<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">6 / 33</div>
+		  <img src="images/img17-1.png" alt="">
+		  <div class="text">Sadie<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">7 / 33</div>
+		  <img src="images/img19-1.png" alt="">
+		  <div class="text">Otis &amp; Jenna<hr/>Dog Walking - dog park</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">8 / 33</div>
+		  <img src="images/img21-1.png" alt="">
+		  <div class="text">Xavier<hr/>House Sitting - not just dogs and cats!</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">9 / 33</div>
+		  <img src="images/img25-1.png" alt="">
+		  <div class="text">Dill<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">10 / 33</div>
+		  <img src="images/img27-1.png" alt="">
+		  <div class="text">Sadie<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">11 / 33</div>
+		  <img src="images/img29-1.png" alt="">
+		  <div class="text">Sadie<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">12 / 33</div>
+		  <img src="images/img30-1.png" alt="">
+		  <div class="text">Gear<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">13 / 33</div>
+		  <img src="images/img31-1.png" alt="">
+		  <div class="text">Gear<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">14 / 33</div>
+		  <img src="images/img33-1.png" alt="">
+		  <div class="text">Hank<hr/>House Sitting</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">15 / 33</div>
+		  <img src="images/img34-1.png" alt="">
+		  <div class="text">Norman<hr/>House Sitting</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">16 / 33</div>
+		  <img src="images/img35-1.png" alt="">
+		  <div class="text">Hank &amp; Norman<hr/>House Sitting</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">17 / 33</div>
+		  <img src="images/img40-1.png" alt="">
+		  <div class="text">Ollie<hr/>Dog Walking - dog park</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">18 / 33</div>
+		  <img src="images/img42-1.png" alt="">
+		  <div class="text">Jenna<hr/>Dog Walking - dog park</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">19 / 33</div>
+		  <img src="images/img44-1.png" alt="">
+		  <div class="text">Otis, Ollie, &amp; Jenna<hr/>Dog Walking - dog park</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">20 / 33</div>
+		  <img src="images/img48-1.png" alt="">
+		  <div class="text">Annabelle<hr/>House Sitting</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">21 / 33</div>
+		  <img src="images/img52-1.png" alt="">
+		  <div class="text">Jackson<hr/>House Sitting</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">22 / 33</div>
+		  <img src="images/img56-1.png" alt="">
+		  <div class="text">Bella &amp; Honey<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">23 / 33</div>
+		  <img src="images/img57-1.png" alt="">
+		  <div class="text">Bella &amp; Honey<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">24 / 33</div>
+		  <img src="images/img63-1.png" alt="">
+		  <div class="text">Otis, Jenna, &amp; Heath<hr/>Dog Walking - dog park</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">25 / 33</div>
+		  <img src="images/img67-1.png" alt="">
+		  <div class="text">General<hr/>House Sitting</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">26 / 33</div>
+		  <img src="images/img82-1.png" alt="">
+		  <div class="text">Barry &amp; Lou<hr/>House Sitting - not just dogs and cats!</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">27 / 33</div>
+		  <img src="images/img83-1.png" alt="">
+		  <div class="text">Honey<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">28 / 33</div>
+		  <img src="images/img92-1.png" alt="">
+		  <div class="text">Norman<hr/>House Sitting</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">29 / 33</div>
+		  <img src="images/img100-1.png" alt="">
+		  <div class="text">Gear<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">30 / 33</div>
+		  <img src="images/img102-1.png" alt="">
+		  <div class="text">Gear<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">31 / 33</div>
+		  <img src="images/odin.png" alt="">
+		  <div class="text">Odin<hr/>Dog Walking</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">32 / 33</div>
+		  <img src="images/gus.png" alt="">
+		  <div class="text">Gus<hr/>House Sitting</div>
+		</div>
+		
+		<div class="mySlides fade">
+		  <div class="numbertext">33 / 33</div>
+		  <img src="images/odin1.png" alt="">
+		  <div class="text">Bear, Ember, & Odin<hr/>House Sitting</div>
+		</div>
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	</div>
+	
+	<br>
+
+	<div id="dot_container" style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	  <span class="dot" onclick="currentSlide(4)"></span>
+	  <span class="dot" onclick="currentSlide(5)"></span>
+	  <span class="dot" onclick="currentSlide(6)"></span>
+	  <span class="dot" onclick="currentSlide(7)"></span>
+	  <span class="dot" onclick="currentSlide(8)"></span>
+	  <span class="dot" onclick="currentSlide(9)"></span>
+	  <span class="dot" onclick="currentSlide(10)"></span>
+	  <span class="dot" onclick="currentSlide(11)"></span> 
+	  <span class="dot" onclick="currentSlide(12)"></span> 
+	  <span class="dot" onclick="currentSlide(13)"></span> 
+	  <span class="dot" onclick="currentSlide(14)"></span>
+	  <span class="dot" onclick="currentSlide(15)"></span>
+	  <span class="dot" onclick="currentSlide(16)"></span>
+	  <span class="dot" onclick="currentSlide(17)"></span>
+	  <span class="dot" onclick="currentSlide(18)"></span>
+	  <span class="dot" onclick="currentSlide(19)"></span>
+	  <span class="dot" onclick="currentSlide(20)"></span>
+	  <span class="dot" onclick="currentSlide(21)"></span> 
+	  <span class="dot" onclick="currentSlide(22)"></span> 
+	  <span class="dot" onclick="currentSlide(23)"></span> 
+	  <span class="dot" onclick="currentSlide(24)"></span>
+	  <span class="dot" onclick="currentSlide(25)"></span>
+	  <span class="dot" onclick="currentSlide(26)"></span>
+	  <span class="dot" onclick="currentSlide(27)"></span>
+	  <span class="dot" onclick="currentSlide(28)"></span>
+	  <span class="dot" onclick="currentSlide(29)"></span>
+	  <span class="dot" onclick="currentSlide(30)"></span>
+	  <span class="dot" onclick="currentSlide(31)"></span>
+	  <span class="dot" onclick="currentSlide(32)"></span>
+	  <span class="dot" onclick="currentSlide(33)"></span>
+
+	</div>
+</div>
+	<figure class="line_contain">
+		<a href="#top"><img class="line" src="../images/bone.png" alt=""></a>
+	</figure>
+	<div class="line_text">
+		<a class="line_text" href="#top">BACK TO TOP</a>
+	</div>
+	
+	<div class="phone_div" id="email_icon_contain">
+			<a id="email_icon_link" href="mailto:heathwalksdogs@gmail.com">
+				<img id="email_icon" src="../images/email.png" alt="email">
+					</a>
+						</div>
+</article>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+	
+</body>
+</html>
