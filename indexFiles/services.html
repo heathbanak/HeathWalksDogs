@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Services </title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Dog Walker">
+	<meta name="keywords" content="dog, dogs, dog walker, pet, pets, pet care, rover, 
+									care, sitter, pet sit, pet sitter, house sit, house sitter,
+									sitting, pet sitting, house sitting">
+	<meta name="author" content="Heather Banak">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="../body&header_styles.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="icon" href="../images/web_icon.png">
+	
+	<style>
+#serve_meet {width: 89%; clear: both;}
+
+#serve_walk, #serve_house {margin-left: 66px;}
+#serve_walk {display: block; float: left; width: 42%;}
+#serve_house {display: block; float: left; width: 42%; margin-bottom: 77px;}
+
+hr {width: 100%; margin-top: 20px; margin-bottom: 15px;}
+
+#final, #final1 {text-align: center;}
+
+big {font-size: 15px;}
+li {font-size: 13px;}
+
+/*dropdown*/
+.dropdown_serve {
+  position: relative;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.dropdown_text_serve {
+	background-color: #3498DB;
+	padding: 10px;
+	margin-left: 150px;
+	font-size: 13px;
+}
+
+.dropdown-content_serve {
+  display: none;
+  position: absolute;
+  background-color: black;
+  width: 375px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown_serve:hover .dropdown-content_serve {
+  display: block;
+}
+
+.dropdown_serve:hover .dropdown_text_serve {
+	background-color: #2980B9;
+}
+
+.phone_div {display: none;}
+
+/*responsive design checklist --
+	d	iPhone SE: portrait (w320);landscape (w568)
+	d	iPhone 8: portrait (w375);landscape (w667)
+	d	iPhone 8 plus: portrait (w414);landscape (w736)	
+	d	iPhone X: portrait (w375);landscape (w812)
+	
+		iPad mini: 
+			portrait
+				fullscreen (w768);
+				splitscreen
+					small (w320)
+					large (w438)
+			landscape
+				fullscreen (w1024)
+				splitscreen
+					small (w320)
+					large (w694)
+					even (w507)
+		iPad:
+			portrait
+				fullscreen (w768)
+				splitscreen
+					small (w320)
+					large (w438)
+			landscape
+				fullscreen (w1024)
+				splitscreen
+					small (w320),
+					arge (w694)
+					even (w507)
+		iPad Pro small:
+			portrait
+				fullscreen (w834)
+				splitscreen
+					small (w320)
+					large (w504)
+			landscape
+				fullscreen (w1112)
+				splitscreen
+					small (w320)
+					large (w782)
+					even (w551)
+		iPad Pro large:
+			portrait
+				fullscreen (w1024)
+				splitscreen
+					small (w375)
+					large (w639)
+			landscape
+				fullscreen (w1366)
+				splitscreen
+					small (w375)
+					large (w981)
+					even (w678)
+									--*/
+
+/*responsive*/
+
+/*width 812*/
+	/*iPhone SE/6/7/8/Plus/X landscape*/
+@media only screen and (max-width: 812px){
+	.dropdown_serve {display: none;}
+	#content_walk, #content_house, #content_meet {display: none;}
+	.phone_div {display: block;}
+	h1 {font-size: 15px;}
+	
+	#serve_walk, #serve_house, #serve_meet {width: 75%; float: none;
+					margin: 80px auto 0 auto; padding-right: 20px; padding-left: 20px;}
+	#ph_walk {text-align: center; margin-top: 0; padding-top: 20px;}
+	.p_section_heading {font-style: italic; background-color: rgba(145, 145, 145, 0.5);
+						border-radius: 3px 3px 0px 0px; width: 85%; display: block;
+						margin-right: auto; margin-left: auto; margin-bottom: 0;}
+	.phone_section {font-family: 'Noto Sans TC', "sans serif";}
+	.inside_line {width: 85%;}
+	.phone_more_serve {margin-top: 0; background-color: rgba(145, 145, 145, 0.5);
+						width: 85%;}
+	#walks_submenu, #walks2_submenu,
+	#house_submenu, #house1_submenu, #house2_submenu
+						 {width: 77%; background-color: rgba(145, 145, 145, 0.5); padding-top: 10px;
+						margin-right: auto; margin-left: auto;}
+	.phone_less_serve {margin-top: 20px;
+						border-radius: 0px 0px 3px 3px;}
+	li {font-size: 13px;}
+	
+	#noshow {display: none;}
+	
+	#tailor_div1, #tailor_div2 {border: 2px solid white; width: 75%; margin: 65px auto 0 auto;
+								background-color: rgba(113, 156, 176, 0.9);}
+	.tailor {color: white; text-align: center; font-family: 'Nanum Pen Script', cursive;
+				padding-right: 15px; padding-left: 15px;}
+	#email_icon_contain {padding-left: 48.5%;}
+}
+
+/*width 414*/
+	/*iPhone SE/6/7/8/Plus/X portrait*/
+@media only screen and (max-width: 414px){
+	#email_icon_contain {padding-left: 47%;}
+}
+	</style>
+</head>
+	
+<body>
+	<header>
+		<!--email large!--> 
+		<p id="large"><a href="mailto: heathwalksdogs@gmail.com">
+			Email now! &nbsp; &nbsp; &nbsp; HeathWalksDogs@gmail.com</a></p>
+		<!--logo and nav!-->
+		<div class="header">
+			<a href="../index.html"><img src="../images/header.png" alt=""></a>
+			<nav>
+				<li>
+					<div class="dropdown">
+						<button id="current" class="dropbutton"><a id="current" href="../index.html">HOME</a></button>
+							<div class="dropdown-content">
+								<a href="../index.html">ABOUT</a>
+								<a href="services.html">SERVICES</a>
+							</div>
+					</div>
+				</li>
+				<li><button><a href="../bookings/bookings.html">BOOKINGS</a></button></li>
+				<li><button><a href="../reviews/reviews.html">REVIEWS</a></button></li>
+				<li><button><a href="../gallery/gallery.html">GALLERY</a></button></li>
+				<li><button><a href="../contact/contact.html">CONTACT</a></button></li>
+			</nav>
+		</div>
+		
+		<!--phone size!-->
+		<div class="phone_size">
+			<div id="slogan">
+				A new best friend for your furry friend
+			</div>
+			
+			<figure id="logo">
+				<a href="../index.html">
+					<img src="../images/web_icon.png">
+				</a>
+			</figure>
+			
+			<button id="menu">
+				<a href="../menu.html">&#8226;menu&#8226;</a>
+			</button>
+		</div>
+	</header>
+	
+	<!--main content!-->
+	<div class="article">
+		<!--title!-->
+		<h1>SERVICES</h1>
+			<!--dog wlaking!-->
+			<div class="intro" id="serve_walk">
+				<h2>Dog Walking</h2>
+				<div class="content" id="content_walk">
+					<!--exercise!-->
+					<big>Exercise</big>
+					<ul>
+						<li>long walks and active playtime</li>
+						<li>can take pets to other locations to exercise, like Ashland State Park</li>
+						<ul>
+							<li>allows for interaction with other pets</li>
+						</ul>
+					</ul>
+					<!--expanded!-->
+					<div class="dropdown_serve">
+						<span class="dropdown_text_serve">more info</span>
+						<div class="dropdown-content_serve">
+							<p>&emsp; Exercise can be integral to your pets' health and happiness.
+								If you have a very active pet, I am able to provide long walks and playtime to ensure
+								that their exercise needs are being met.
+								If you have a fenced yard, or your dog(s) can be off-leash, I can combine both a walk and off-leash play in one visit.
+								If your dog interacts well with other dogs and can be off-leash, I can also take them to the Ashland State Park &mdash;
+								there you will find a large field for all dogs to run, play, and enjoy together, along with trails through a wooded area surrounding the reservoir.
+							</p>
+						</div>
+					</div>
+			
+					<hr/>
+				
+					<!--less active!-->
+					<big>For Less Active Pets</big>
+						<ul>
+							<li>happy to service senior pets and/or less active pets</li>
+							<li>pet receives full-length visit regardless of activities</li>
+							<li>whatever your pet may need, indoors or outdoors, active or non-active, will be supplied happily</li>
+							<li>pet sets our boundaries</li>
+						</ul>
+					<!--expanded!-->
+					<div class="dropdown_serve">
+						<span class="dropdown_text_serve">more info</span>
+						<div class="dropdown-content_serve">
+							<p>&emsp; That being said, I am aware that not every pet needs this amount of activity.
+								I am more than happy to spend time with less active pets, including senior pets, who may benefit from a less intense visit.
+								Many people hire a dog walker to help their pet feel less lonely while they are away or at work,
+								and the best thing for some pets is simply company.
+								When I am visiting a less-active pet, I ensure that all of my time remains focused on them.
+								Whatever they like to do to feel most comfortable, whether that be getting lots of pets, snuggling up on the couch,
+								playing with toys, or just relaxing, my job is to increase their happiness in any way I can.
+								I understand that not all pets are snugglers, and that sometimes the best thing for a pet is simply to know that someone else is there.
+								I will always give your pet the space they need and let THEM set our boundaries.
+							</p>
+						</div>
+					</div>
+				
+					<hr/>
+					<!--final!-->
+					<p id="final"><font size="3">All in all, my services can and will be tailored to exactly what you and your pet(s) need.
+						As your needs change, so will my services.</font>
+					</p>
+				</div>
+			<!--for phone!-->
+				<div class="phone_div" id="phone_walk">
+					<p class="phone_heading" id="ph_walk">Dog Walking <hr/>
+						</p>
+				
+					<div class="phone_section">
+						<p class="p_section_heading" style="font-size:13px;">Exercise
+							</p>
+						<input id="check03" type="checkbox" name="menu" />
+						<label class="phone_more_serve" for="check03"><img src="../images/arrow/down.png" alt="read more"></label>
+						<ul class="submenu" id="walks_submenu">
+							<li>Long walks and active playtime</li>
+							<li>Walk and play can be combined in one visit</li>
+							<li>Can take pets to other locations to exercise, like Ashland State Park
+							&mdash; allows for interaction with other pets</li>
+							<li><label class="phone_less_serve" for="check03"><img src="../images/arrow/up.png"></label></li>
+								</ul>
+									</div>
+					<hr class="inside_line"/>
+					
+					<div class="phone_section">
+						<p class="p_section_heading" style="font-size:13px;">Less Active Pets
+							</p>
+						<input id="check04" type="checkbox" name="menu" />
+						<label class="phone_more_serve" for="check04"><img src="../images/arrow/down.png" alt="read more"></label>
+						<ul class="submenu" id="walks2_submenu">
+							<li>Happy to service senior pets and/or less active pets</li>
+							<li>Pet receives full-length visit regardless of activities</li>
+							<li>Whatever your pet may need, indoors or outdoors, active or non-active, will be supplied happily</li>
+							<li>Pet sets our boundaries</li>
+							<li><label class="phone_less_serve" for="check04"><img src="../images/arrow/up.png"></label></li>
+								</ul>
+									</div>
+				</div>
+			</div>
+
+<!--phone!-->
+<div class="phone_div" id="tailor_div1">
+	<p class="tailor">My services always are and always will be tailored to the needs of each individual client and pet.
+		</p>
+			</div>
+<!--end phone!-->
+
+			<!--house sitting!-->
+			<div class="intro" id="serve_house">
+				<h2>House Sitting</h2>
+				<div class="content" id="content_house">
+					<big>House Sitting</big>
+						<p>&emsp; House sitting is typically when a sitter stays at your home with your pets while you are away for an extended period of time (at least one night).
+							The service is best for pets who do not do well away from home, as an alternative option to a kennel or boarding your pet.
+							As a house sitter, my job is to care for your pet in the same way you would, and to help them feel comfortable and safe while you are away.
+						</p>
+						
+					<div class="dropdown_serve">
+						<span class="dropdown_text_serve">more info</span>
+						<div class="dropdown-content_serve">
+							<p>&emsp; Put yourself in your pets' situation:
+								The people they see everyday suddenly aren't there (maybe for the first time) and are replaced by a stranger!
+								Many pets are scared by this and can act very nervously while their owners are away, especially if they are unfamiliar with the new person in their home.
+								This is another reason why our meet-ups are integral &mdash; the more comfortable your pet is with me before you leave,
+								the more successful and enjoyable our stay together will be.
+								<br/>
+								&emsp; For more nervous or protective pets, I recommend multiple meet-ups or even scheduling a few walks before you leave.
+								Your pet is much less likely to be nervous without you if they already recognize me as a caretaker.
+							</p>
+						</div>
+					</div>
+						
+						<hr/>
+						
+					<p>&emsp; What I do with your pet can as much up to you or up to me as you would like.
+						If they have a strict feeding/exercise schedule, I will be sure to follow this to a t (routines can be as important in your pets' life as they are in ours!).
+						If not, I will be sure to keep them busy with lots of play and pets.
+					</p>
+					
+					<hr/>
+					<!--final!-->
+					<p id="final1"><font size="3">All in all, my services can and will be tailored to exactly what you and your pet(s) need.
+						As your needs change, so will my services.</font>
+					</p>
+				</div>
+				
+			<!--for phone!-->
+				<div class="phone_div" id="phone_house">
+					<p class="phone_heading" id="ph_house">House Sitting <hr/>
+						</p>
+					
+					<div class="phone_section">
+						<p class="p_section_heading" style="font-size: 13px;">What is house sitting?
+							</p>
+						<input id="check05" type="checkbox" name="menu" />
+						<label class="phone_more_serve" for="check05"><img src="../images/arrow/down.png" alt="read more"></label>
+						<ul class="submenu" id="house_submenu">
+							<li>House sitting is typically when a sitter stays at your home with your pets while you are away for an extended period of time (at least one night).
+							The service is best for pets who do not do well away from home, as an alternative option to a kennel or boarding your pet.
+							As a house sitter, my job is to care for your pet in the same way you would, and to help them feel comfortable and safe while you are away.
+							</li>
+							<li><label class="phone_less_serve" for="check05"><img src="../images/arrow/up.png"></label></li>
+								</ul>
+									</div>
+							
+						<hr class="inside_line"/>
+					
+					<div class="phone_section">
+						<p class="p_section_heading" style="font-size: 13px;">For nervous pets
+							</p>
+						<input id="check06" type="checkbox" name="menu" />
+						<label class="phone_more_serve" for="check06"><img src="../images/arrow/down.png" alt="read more"></label>
+						<ul class="submenu" id="house1_submenu">
+							<li>For more nervous or protective pets, I recommend multiple meet-ups or even scheduling a few walks before you leave.
+							Your pet is much less likely to be nervous without you if they already recognize me as a caretaker.
+							This is another reason why meet-ups are integral.
+							</li>
+							<li><label class="phone_less" for="check06"><img src="../images/arrow/up.png"></label></li>
+								</ul>
+									</div>	
+						
+						<hr class="inside_line"/>
+
+					<div class="phone_section">
+						<p class="p_section_heading" style="font-size: 13px;">Activities
+							</p>
+						<input id="check07" type="checkbox" name="menu" />	
+						<label class="phone_more_serve" for="check07"><img src="../images/arrow/down.png" alt="read more"></label>
+						<ul class="submenu" id="house2_submenu">
+							<li>What I do with your pet can as much up to you or up to me as you would like.
+							If they have a strict feeding/exercise schedule, I will be sure to follow this to a t (routines can be as important in your pets' life as they are in ours!).
+							If not, I will be sure to keep them busy with lots of play and pets.
+							</li>
+							<li><label class="phone_less_serve" for="check07"><img src="../images/arrow/up.png"></label></li>		
+									</ul>				
+								</div>
+				</div>
+			</div>
+
+<!--phone!-->
+<div class="phone_div" id="tailor_div2">
+	<p class="tailor">As your needs change, so will my services!
+		</p>
+			</div>
+<!--end phone!-->
+			
+			<!--meet!-->
+			<div class="intro" id="serve_meet">
+				<h2>Meet Ups</h2>
+				<p id="noshow">*meet-ups are required prior to any service*</p>
+				<div class="content" id="content_meet">
+					<p>&emsp; Before I accept a new client, we always meet-up ahead of time so that I can meet them and their pet(s).
+						I understand that some pets may need more than one visit to be comfortable with a new person, and I will
+						work with them for however long they need to establish a good relationship between us. 
+						Building a relationship with your pet is the most important things to me; I am here to help
+						your pet be happy and comfortable, and the first step is for them to know that I am a friend.
+					</p>
+				</div>
+			<!--for phone!-->
+				<div class="phone_div" id="phone_meet">
+					<p class="phone_heading" id="ph_meet">Meet-Ups <hr/>
+						</p>
+					
+					<div class="phone_section">
+						<p style="font-size:13px">Meet-ups are required prior to any service.</p>
+						<p style="font-size:13px">Keeping your pet(s) safe and happy is my priority,
+							and meet-ups are the best way to ensure that your pet(s) and I are a good fit.
+							Some pets may take longer than others to feel comfortable with a new walker/sitter.
+							Establishing a relationship between us is the first step.   
+							
+							<!--Before I accept a new client, we always meet-up ahead of time so that I can meet them and their pet(s).
+							I understand that some pets may need more than one visit to be comfortable with a new person, and I will
+							work with them for however long they need to establish a good relationship between us. 
+							Building a relationship with your pet is the most important things to me; I am here to help
+							your pet be happy and comfortable, and the first step is for them to know that I am a friend.!-->
+							</p>
+						
+						<hr class="inside_line"/>
+						
+							</div>
+								</div>
+				
+			</div>
+			
+		<figure id="line_contain">
+			<a href="#top"><img id="line" src="../images/bone.png" alt=""></a>
+		</figure>
+		<div class="line_text"><a class="line_text" href="#top">BACK TO TOP</a></div>
+		
+		<div class="phone_div" id="email_icon_contain">
+			<a class="email_icon_link" href="mailto:heathwalksdogs@gmail.com">
+				<img class="email_icon" src="../images/email.png" alt="email">
+					</a>
+						</div>
+
+<div class="attribute">Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+	</div>
+
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

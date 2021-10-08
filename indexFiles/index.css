@@ -1,0 +1,373 @@
+/*
+	filename: homepage.css
+	author: Heather Banak
+	created: 02_14_2020
+	updated: 06_14_2020
+							*/
+
+/* universals */							
+h1 {
+	text-align: center;
+	font-family: 'Source Sans Pro';
+	letter-spacing: 0.7em;
+	background-color: #FFFCCC;
+	font-size: 1.5em;
+	}
+	
+.article {
+	padding-top: 30px;
+	background-image: url("../images/background/index.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom: 80px;
+	overflow: auto;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	clear: both;
+	}
+
+h2 {
+	text-align: center;
+	padding-top: 35px;
+	font-size: 30px;
+	color: hsla(360, 0%, 92%, 1);
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+	font-family: 'Luckiest Guy', serif;
+	}
+
+h3 {
+	text-align: center;
+	}
+
+div.intro {
+	background-color: hsla(0, 0%, 0%, 0.3);
+	color: white;
+	width: 47%;
+	display: block;
+	margin: 80px auto 0 auto;
+	padding-bottom: 50px;
+	}
+	
+div.intro p {
+	text-align: center;
+	font-size: 15px;
+	}
+
+div.content {
+	background-color: rgba(29, 103, 140, 0.75);
+	color: white;
+	margin-left: 40px;
+	margin-right: 40px;
+	padding: 25px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: hsla(0, 0%, 0%, 0.25);
+	font-family: 'Noto Sans TC', "sans serif";
+	overflow: auto;
+	}
+
+/*section 1: about*/
+#about {
+	width: 86%;
+	}
+
+#heath {
+	width: 100%;
+	height: 100%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+figure {
+	display: block;
+	margin-right:auto;
+	margin-left:auto;
+	width:300px;
+	padding-top: 35px;
+	padding-right: 0;
+	}
+
+#bio_left {display: block; float: left; width: 60%;}
+
+#bio_right {display: block; float: left; width: 40%;}
+
+#bio_left p {font-size: 12px;}
+#bio_left #large {font-size: 15px;}
+
+#bio_content {padding-bottom: 35px;}
+
+#bio_content p {
+	text-align: left;
+	}
+
+div.content p a {
+	color: white;
+	}
+
+div.content p a:hover {
+	color: #FFF653;
+	}
+
+div.content p a:active {
+	color: #96dcff;
+	}
+
+.line {
+	height: 25px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	transition: 0.4s;
+	}
+
+figure#bone {width: 100%; display: block; margin-right: auto; margin-left: auto;}
+
+.line:hover{
+	transform: scale(1.3);
+	}
+
+
+/*row2*/
+#row2 {width: 86%; display: block; margin-right: auto; margin-left: auto;}
+#row2 li {font-size: 12px;}
+
+
+/*section 2: pricing*/
+#pricing {display: block; float: left; text-align: left;}
+#walk, #house, #meet {padding-bottom: 5%;}
+big {font-size: 15px; font-weight: bolder; padding-bottom: 5%; padding-left: 2%;}
+.icon_full {width: 40px; height: 100%; padding-left: 27px;}
+#phone_icons_full {margin-top: 20px; height: 40px;}
+#pricing ul, #policies ul {list-style-type: none;}
+#pricing li, #policies li {padding-right: 10%;}
+#pricing hr, #policies hr {margin-bottom: 5%;}
+
+
+/*section3: policies*/
+#policies {display: block; float: right; text-align: left;}
+#policy_meet, #policy_walk, #policy_price, #policy_book {padding-bottom: 5%;}
+
+/*line*/
+#line_contain {display: block; clear: both;}
+
+#line {height: 25px; display: block; margin-right: auto; margin-left: auto; transition: 0.4s ease; padding-top: 80px;}
+#line:hover {transform: scale(1.2);}
+
+.line_text {
+	background-color: hsla(0, 0%, 0%, 0.3);
+	padding-top: 0;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+	height: 25px;
+	}
+
+a.line_text {text-decoration: none; transition: 0.4s ease;}
+a.line_text:hover {transform: scale(1.2);}
+
+/*adjustments*/
+#bio_phone_ {display: none;}
+#pricing_phone {display: none;}
+#policies_phone {display: none;}
+.phone_div {display: none;}
+.attribute {display: none;}
+
+/*responsive design checklist --
+	d	iPhone SE: portrait (w320);landscape (w568)
+	d	iPhone 8: portrait (w375);landscape (w667)
+	d	iPhone 8 plus: portrait (w414);landscape (w736)		
+	d	iPhone X: portrait (w375)(h812);landscape (w812)
+	
+		iPad mini: 
+			portrait
+				fullscreen (w768);
+				splitscreen
+					small (w320)
+					large (w438)
+			landscape
+				fullscreen (w1024)
+				splitscreen
+					small (w320)
+					large (w694)
+					even (w507)
+		iPad:
+			portrait
+				fullscreen (w768)
+				splitscreen
+					small (w320)
+					large (w438)
+			landscape
+				fullscreen (w1024)
+				splitscreen
+					small (w320),
+					arge (w694)
+					even (w507)
+		iPad Pro small:
+			portrait
+				fullscreen (w834)
+				splitscreen
+					small (w320)
+					large (w504)
+			landscape
+				fullscreen (w1112)
+				splitscreen
+					small (w320)
+					large (w782)
+					even (w551)
+		iPad Pro large:
+			portrait
+				fullscreen (w1024)
+				splitscreen
+					small (w375)
+					large (w639)
+			landscape
+				fullscreen (w1366)
+				splitscreen
+					small (w375)
+					large (w981)
+					even (w678)
+									--*/
+
+/*responsive*/
+
+/*width = 812*/
+	/*iPhone X landscape*/
+@media only screen and (max-width: 812px){
+	body {width: 100%;}
+	h1 {font-size: 15px; margin-top: 40px;}
+	h2 {display: none;}
+	#intro_p {display: none;}
+	#bio_right {display: none;}
+	div.intro {padding-bottom: 25px; margin-top: 30px;}
+	#line {padding-top: 0px;}
+	#line_contain {padding: 30px 0 0 0;}
+	.article {padding-bottom: 0px; overflow-x: hidden; max-width: 100%;}
+	
+	.article {background-image: url("../images/background/index_landscape.jpg");}
+	
+	p.phone_heading {font-family: 'Noto Sans TC', "sans serif"; padding-top: 20px;}
+	
+	#about {margin-top: 25px;}
+	#phone_heath {width: 100%; height: 100%; margin-left: 175px;}
+	#phone_figure_heath {float: none; width: 200px; margin: 0; padding-left: 58px;}
+	div.content {background-color: transparent; margin: 0; border: none;}
+	#bio_content {padding: 0; margin-top: 60px;}
+	#bio_left {display: none;}
+	#bio_phone_ {display: block;
+				padding: 0 15px 0 15px;
+				float: none;}
+	#bio_phone_ #phone_heading_bio {font-size: 15px;}
+	#bio_phone_ p {font-size: 12px; text-align: center;}
+	#bio_phone_extend {margin-left: 87px; padding: 0;
+						border: none;}
+	/*extend content on click*/
+	input, ul.submenu {display: none;}
+	label img {width: 15px; height: 15px; margin: auto;}
+	label {/*font-size: 10px;*/
+			display: block;
+			cursor: pointer;
+			margin: 30px auto auto auto;
+			width: 100%;
+			text-align: center;
+			/*background-color: hsla(199, 29%, 57%, 0.85);
+			color: #ededed;
+			padding: 10px 0px 10px 0px;
+			width: 90px;
+			border-radius: 8px;*/}
+	.phone_more {background-color: rgba(145, 145, 145, 0.5); border-radius: 10px 10px 0 0;
+					padding-top: 5px;}
+	input:checked~ul.submenu {display: block;}
+	.submenu {list-style-type: none; text-align: center; margin: 0; padding: 0; background-color: rgba(145, 145, 145, 0.5);
+				font-family: 'Noto Sans TC', "sans serif"; font-size: 13px; border-radius: 0px 0px 10px 10px;
+					padding: 30px 10px 0 10px;}
+		#last {padding-bottom: 13px;}
+	.submenu a {color: rgb(231, 247, 255);}
+	.submenu a:hover, .submenu a:active {color: #00699e;}
+	.phone_less {border-radius: 3px 3px 10px 10px; margin-top: 30px;
+					padding-bottom: 5px;}
+	
+	#phone_price, #phone_policies {font-size: 12px; font-family: 'Noto Sans TC', "sans serif";}
+	div.intro .phone_heading {font-size: 15px;}
+	#pricing_content {display: none;}					
+	#pricing_phone {display: block; padding-right: 15px; padding-left: 15px;}
+	#pricing {float: none; width: 86%;}
+	#phone_icons {display: block; width: 100%; margin-top: 37px; padding: 0;}
+	.icon {width: 25px; height: 25px; padding:0 0 0 72px; margin:0;}
+	
+	
+	#content_policies {display: none;}
+	#policies_phone {display: block; padding-right: 15px; padding-left: 15px;}
+	#policies {float: none; width: 86%;}
+	
+	div.phone_div {display:block;}
+	.email_icon {display: block; height: 100%; width: 100%; float:none; margin: 0 auto 0 auto;}
+	.email_icon_link {width: 30px; height: 100%; padding:0; background-color: rgba(231, 247, 255, 0.7);
+						border-radius: 50px;}
+	#email_icon_contain {width: 100%; height: 30px; padding-left: 48.5%;
+							padding-bottom: 20px; margin: 65px auto 0 auto;}
+}
+
+/*width = 736*/
+	/*iPhone Plus landscape*/
+@media only screen and (max-width: 736px){
+	#phone_figure_heath {padding-left: 25px;}
+	.icon {width: 20px; height: 20px; padding:0 0 0 67px;}
+}
+
+/*width = 667*/
+	/*iPhone 6/7/8 landscape*/
+@media only screen and (max-width: 667px){	
+	#phone_heath {margin-left: 145px;}
+	.icon {padding:0 0 0 57px;}
+	#content_policies {display: none;}
+	#policies_phone {display: block; padding-right: 15px; padding-left: 15px;}
+	#policies {float: none; width: 86%;}
+}
+
+/*width = 568*/ 
+	/*iPhone SE landscape*/
+@media only screen and (max-width: 568px){
+	h1 {margin-top: 35px;}		
+	#phone_heath {margin-left: 100px;}
+	.icon {padding:0 0 0 45px;}
+	#email_icon_contain {padding-left: 48%;}
+}
+
+/*width = 414*/
+	/*iPhone Plus portrait*/
+@media only screen and (max-width: 414px){
+	.article {background-image: url("../images/background/index_portrait.jpg");}
+	h1 {margin-top: 60px;}
+	#phone_heath {margin-left: 37px;}
+	.icon {padding:0 0 0 27px;}
+	#email_icon_contain {padding-left: 47.5%;}
+}
+
+/**/
+	/*width 375*//*height 812*/
+		/*iPhone X portrait*/
+	@media only screen and (width: 375px) and (height: 812px){
+		.article {padding-top: 50px;}
+	}
+/**/
+
+/*width = 375*/ 
+	/*iPhone 6/7/8 portrait*/
+@media only screen and (max-width: 375px){	
+	h1 {margin-top: 35px;}
+	#phone_heath {margin: 0;}
+	#phone_figure_heath {padding-left: 45px;}
+	.icon {padding:0 0 0 21px;}
+	#email_icon_contain {padding-left: 47%;}
+}
+
+/*width = 320*/ 
+	/*iPhone SE portrait*/
+@media only screen and (max-width: 320px){	
+	#phone_figure_heath {padding-left: 23px;}
+	.icon {padding:0 0 0 15px;}
+}
